@@ -32,7 +32,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     console.log(user.username);
   })
 })
-  */
+  
  const chek = () => {
   fetch("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json")
   .then(response => response.json())
@@ -46,3 +46,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
   console.log(` aaaaaaa${count} bbbbbbbbbbbbbbbb`)
  }
  chek();
+ */
+ function stringCheck(value) {
+  // write your code here
+    return value.every(function(x){
+      return x === value[0];
+    })
+}
+console.log(stringCheck(['Cssup', 'Cup']))
